@@ -1,8 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/sumeet/Documents/projects/baremetal_rpi/toolchain_check'
-rm kernel8.elf *.o >/dev/null 2>/dev/null || true
-../gcc-arm-aarch64-none-elf/bin/aarch64-none-elf-gcc -Wall -O2 -ffreestanding -nostdinc -nostdlib -nostartfiles -c start.S -o start.o
-../gcc-arm-aarch64-none-elf/bin/aarch64-none-elf-ld -nostdlib start.o -T link.ld -o kernel8.elf
-../gcc-arm-aarch64-none-elf/bin/aarch64-none-elf-objcopy -O binary kernel8.elf kernel8.img
-make: Leaving directory '/home/sumeet/Documents/projects/baremetal_rpi/toolchain_check'
- 

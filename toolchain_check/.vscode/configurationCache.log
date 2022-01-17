@@ -1,1 +1,0 @@
-{"buildTargets":["all","clean","kernel8.img","start.o"],"launchTargets":["/home/sumeet/Documents/projects/baremetal_rpi/toolchain_check>kernel8.elf()"],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
