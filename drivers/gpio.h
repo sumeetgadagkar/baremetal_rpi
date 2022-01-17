@@ -3,10 +3,7 @@
 #ifndef GPIO_H
 #define GPIO_H
 
-// memory mapped I/O base
-#ifndef MIMO_BASE
-#define MMIO_BASE               0x3F000000
-#endif
+#include "raspi3.h"
 
 // GPIO registers for BCM2837. All registers below are R/W 32 bit registers unless otherwise stated
 #define GPFSEL0                 ((volatile unsigned int *)(MMIO_BASE + 0x00200000))
