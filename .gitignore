@@ -16,3 +16,6 @@
 
 # binary folder
 bin/
+
+# toolchain
+gcc-arm-aarch64-none-elf

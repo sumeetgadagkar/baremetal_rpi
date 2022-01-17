@@ -1,13 +1,19 @@
 AArch64_TOOLCHAIN  = ../gcc-arm-aarch64-none-elf/bin/aarch64-none-elf-
 BIN = ./bin/
 CFLAGS = -Wall -O2 -ffreestanding -nostdinc -nostdlib -nostartfiles
+DEBUG = -g
 
 echo = @echo
 rm = @rm
 
-.PHONY : all clean
+.PHONY : all clean debug debug_flag
 
 all: bin clean kernel8.img
+
+debug : debug_flag all
+
+debug_flag :
+	$(eval CFLAGS += $(DEBUG))
 
 bin:
 	if ! test -d $(BIN);\
