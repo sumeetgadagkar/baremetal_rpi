@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/sumeet/Documents/projects/baremetal_rpi'
+make: Leaving directory '/home/sumeet/Documents/projects/baremetal_rpi'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+ 
