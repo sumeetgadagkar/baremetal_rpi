@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jan  9 01:46:13 2022
+# Make data base, printed on Sun Jan 16 19:46:55 2022
 
 # Variables
 
@@ -49,7 +49,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 8:51703
+JOURNAL_STREAM = 8:52372
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -67,7 +67,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 1790
+MANAGERPID = 1725
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -79,7 +79,7 @@ PATH = /home/sumeet/.local/bin:/home/sumeet/miniconda3/condabin:/home/sumeet/.lo
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/sumeet-pc:@/tmp/.ICE-unix/2095,unix/sumeet-pc:/tmp/.ICE-unix/2095
+SESSION_MANAGER = local/sumeet-pc:@/tmp/.ICE-unix/2047,unix/sumeet-pc:/tmp/.ICE-unix/2047
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -89,7 +89,7 @@ VSCODE_LOG_STACK = false
 # environment
 VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=cbaca7e8-93b2-4db8-9be6-5f3202d2fa9c&iid=cbaca7e8-93b2-4db8-9be6-5f3202d2fa9c&sid=cbaca7e8-93b2-4db8-9be6-5f3202d2fa9c","uploadToServer":true}
 # environment
-INVOCATION_ID = b01f843760ec44da842bf9745eb685ea
+INVOCATION_ID = 06bc9d6b815048bb9bcd8a08b0a9c984
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -99,7 +99,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3642
+GIO_LAUNCHED_DESKTOP_FILE_PID = 62253
 # automatic
 %F = $(notdir $%)
 # environment
@@ -113,7 +113,7 @@ PWD = /home/sumeet/Documents/projects/baremetal_rpi
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2052
+SSH_AGENT_PID = 1989
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -149,7 +149,7 @@ SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-c6c50004-8f66-469c-a8b1-7da53877a09b.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-5774b76c-a591-4af5-84fe-daac0f92c0ee.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -217,7 +217,7 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3642
+VSCODE_PID = 62253
 # environment
 _CE_CONDA = 
 # variable set hash-table stats:
@@ -229,9 +229,9 @@ _CE_CONDA =
 
 # Directories
 
-# . (device 2071, inode 19930930): 7 files, no impossibilities.
+# . (device 2071, inode 19930930): 9 files, no impossibilities.
 
-# 7 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -281,12 +281,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 15 / storage = 158 B / avg = 10 B
-# current buf: size = 8162 B / used = 158 B / count = 15 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 171 B / avg = 10 B
+# current buf: size = 8162 B / used = 171 B / count = 17 / avg = 10 B
 
-# strcache performance: lookups = 18 / hit rate = 16%
+# strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
-# Load=15/8192=0%, Rehash=0, Collisions=1/18=6%
-# Finished Make data base on Sun Jan  9 01:46:13 2022
+# Load=17/8192=0%, Rehash=0, Collisions=1/20=5%
+# Finished Make data base on Sun Jan 16 19:46:55 2022
 
  

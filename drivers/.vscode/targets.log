@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jan 15 21:47:15 2022
+# Make data base, printed on Sun Jan 16 19:46:41 2022
 
 # Variables
 
@@ -41,7 +41,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/sumeet/Documents/projects/baremetal_rpi/uart1
+CURDIR := /home/sumeet/Documents/projects/baremetal_rpi/drivers
 # makefile
 SHELL = /bin/sh
 # makefile (from 'Makefile', line 2)
@@ -107,7 +107,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3495
+GIO_LAUNCHED_DESKTOP_FILE_PID = 62253
 # automatic
 %F = $(notdir $%)
 # environment
@@ -117,7 +117,7 @@ CONDA_EXE = /home/sumeet/miniconda3/bin/conda
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /home/sumeet/Documents/projects/baremetal_rpi/uart1
+PWD = /home/sumeet/Documents/projects/baremetal_rpi/drivers
 # default
 .LOADED := 
 # environment
@@ -157,7 +157,7 @@ SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-68953210-aac8-4ac5-8458-6f240414479e.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-bd91c8a1-9a12-442a-beb3-a37baaae9d64.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -229,7 +229,7 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3495
+VSCODE_PID = 62253
 # environment
 _CE_CONDA = 
 # variable set hash-table stats:
@@ -284,6 +284,7 @@ gpio.o:
 .SUFFIXES:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 
 # Not a target:
@@ -342,7 +343,6 @@ clean:
 # Not a target:
 main.o:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -368,6 +368,6 @@ kernel8.img: start.o main.o gpio.o
 # strcache performance: lookups = 39 / hit rate = 43%
 # hash-table stats:
 # Load=22/8192=0%, Rehash=0, Collisions=1/39=3%
-# Finished Make data base on Sat Jan 15 21:47:15 2022
+# Finished Make data base on Sun Jan 16 19:46:41 2022
 
  
