@@ -4,10 +4,10 @@ OBJS = main.o gpio.o
 CFLAGS = -Wall -O2 -ffreestanding -nostdinc -nostdlib -nostartfiles -g
 INCLUDE_PATHS = -I../gcc-arm-aarch64-none-elf/lib/gcc/aarch64-none-elf/10.3.1/include
 
-
-
 echo = @echo
 rm = @rm
+
+.PHONY : all clean
 
 all: bin clean kernel8.img
 

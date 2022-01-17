@@ -6,6 +6,8 @@ CFLAGS = -Wall -O2 -ffreestanding -nostdinc -nostdlib -nostartfiles
 echo = @echo
 rm = @rm
 
+.PHONY : all clean
+
 all: bin clean kernel8.img
 
 bin:

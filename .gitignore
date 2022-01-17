@@ -1,3 +1,5 @@
+!.gitignore
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -10,3 +12,6 @@
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# binary folder
+bin/
