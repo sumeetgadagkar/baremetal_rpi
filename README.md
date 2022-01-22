@@ -10,4 +10,4 @@ This projects aims to implement drivers for all the peripherals on the raspberry
 4. Place it under "`baremetal_rpi`" folder
 
 # Emuation
-For basic emulation of the raspi3 we will use [QEMU](https://wiki.ubuntu.com/ARM64/QEMU)
+For basic emulation of the raspi3 we will use [QEMU 6.2](https://www.qemu.org/) (QEMU is not oficially supported on windows)
