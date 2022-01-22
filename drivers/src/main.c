@@ -26,5 +26,7 @@ int main()
         // infinite loop
     }
 
+    my_func();
+
     return 0;
 }

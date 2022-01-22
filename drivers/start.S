@@ -20,8 +20,15 @@ proc_hang:  wfe
     b proc_hang
 
 master:
-    // core 0
-    // 
+    // read the current exception level
+    mrs x0, CurrentEL
+
+    /*
+    thinngs to do here :
+    1. route all AArch64 exceptions to EL1
+    2. set the AArch64 exception vectors for EL1
+    3. set the EL to EL1
+    */
 
     // get the value of _start
     ldr x1, =_start
