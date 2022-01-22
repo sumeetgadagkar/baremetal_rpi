@@ -5,19 +5,23 @@
 _start:
     //stop all cores except core 0
 
-    // read the first three bits of mpidr_el1 register
+    // read the first 8 bits of 'mpidr_el1' register
+    // the Cortex - A 53 has 4 cores, hence the possible 
+    // values of the last 8 bits of the 'mpidr_el1'
+    // register  are: 0x0, 0x1, 0x2 and 0x3
     mrs x1, mpidr_el1
-    and x1, x1, #3
+    and x1, x1, #0xFF
 
-    // if cpu id is 0 jump to label '2'
-    cbz x1, 2f
+    // if cpu id is 0 jump to label 'master'
+    cbz x1, master
 
-1:  wfe
+proc_hang:  wfe
     // infinite loop
-    b 1b
+    b proc_hang
 
-2:
-    // cpu id == 0
+master:
+    // core 0
+    // 
 
     // get the value of _start
     ldr x1, =_start
@@ -45,4 +49,4 @@ _start:
     // branch with link to 'main'
 4:  bl main
     // for safety if main returns
-    b 1b
+    b proc_hang
