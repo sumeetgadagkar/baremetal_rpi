@@ -1,3 +1,5 @@
+#include "arm/sysregs.h"
+
 .section ".text.boot"
 
 .global _start
@@ -23,12 +25,34 @@ master:
     // read the current exception level
     mrs x0, CurrentEL
 
-    /*
-    thinngs to do here :
-    1. route all AArch64 exceptions to EL1
-    2. set the AArch64 exception vectors for EL1
-    3. set the EL to EL1
-    */
+    // only proceed if in EL3
+    cmp x0, #0xc
+    bne proc_hang
+
+    // route all AArch64 exceptions to EL1
+    // set the EL to EL1
+    // set the AArch64 exception vectors for EL1
+    ldr	x0, =SCTLR_EL1_VALUE
+    msr	sctlr_el1, x0
+
+    ldr	x0, =HCR_EL2_VALUE
+    msr	hcr_el2, x0
+
+    ldr	x0, =SCR_EL3_VALUE
+    msr	scr_el3, x0
+
+    ldr	x0, =SPSR_EL3_VALUE
+    msr	spsr_el3, x0
+
+    adr	x0, el1_entry
+    msr	elr_el3, x0
+
+    eret
+
+el1_entry:
+
+    // check if in EL1
+    mrs x0, CurrentEL
 
     // get the value of _start
     ldr x1, =_start

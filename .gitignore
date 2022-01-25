@@ -19,3 +19,5 @@ bin/
 
 # toolchain
 gcc-arm-aarch64-none-elf
+
+null.d

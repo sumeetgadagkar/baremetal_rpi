@@ -1,6 +1,8 @@
 #include "common.h"
 #include <stddef.h>
 
+
+
 int main()
 {
 
@@ -25,8 +27,6 @@ int main()
     {
         // infinite loop
     }
-
-    my_func();
 
     return 0;
 }

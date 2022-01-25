@@ -18,6 +18,7 @@ debug : debug_flag all
 
 debug_flag :
 	$(eval CFLAGS += $(DEBUG))
+	$(eval ASMFLAGS += $(DEBUG))
 
 bin:
 	if ! test -d $(BIN);\
@@ -28,11 +29,12 @@ bin:
 	$(AArch64_TOOLCHAIN)gcc $(CFLAGS) $(INCLUDE_PATHS) -c $< -o $(BIN)$@
 
 start.o: start.S
-	$(AArch64_TOOLCHAIN)gcc $(ASMFLAGS) -c start.S -o $(BIN)start.o
+	$(AArch64_TOOLCHAIN)gcc $(ASMFLAGS) $(INCLUDE_PATHS) -c start.S -o $(BIN)start.o
 
 kernel8.img: start.o $(OBJS)
 	$(AArch64_TOOLCHAIN)ld -nostdlib $(BIN)start.o $(addprefix $(BIN), $(OBJS)) -Map=$(BIN)kernel8.map  -T link.ld -o $(BIN)kernel8.elf
 	$(AArch64_TOOLCHAIN)objcopy -O binary $(BIN)kernel8.elf $(BIN)kernel8.img
 
 clean:
-	$(rm) $(BIN)kernel8.elf $(BIN)*.o $(BIN)kernel8,map >/dev/null 2>/dev/null || true
+	$(rm) $(BIN)kernel8.elf $(BIN)*.o $(BIN)*.d $(BIN)kernel8.map >/dev/null 2>/dev/null || true
+	$(rm) null.d >/dev/null 2>/dev/null || true
