@@ -1,7 +1,7 @@
 AArch64_TOOLCHAIN  = ../gcc-arm-aarch64-none-elf/bin/aarch64-none-elf-
 BIN = ./bin/
 SRC = ./src/
-OBJS = main.o gpio.o
+OBJS = main.o gpio.o vector_table.o exception_handler.o exception_handler_asm.o
 CFLAGS = -Wall -O2 -ffreestanding -nostdinc -nostdlib -nostartfiles -MMD 
 ASMFLAGS = -MMD
 DEBUG = -g
@@ -27,6 +27,9 @@ bin:
 
 %.o: $(SRC)%.c
 	$(AArch64_TOOLCHAIN)gcc $(CFLAGS) $(INCLUDE_PATHS) -c $< -o $(BIN)$@
+
+%.o: $(SRC)%.S
+	$(AArch64_TOOLCHAIN)gcc $(ASMFLAGS) $(INCLUDE_PATHS) -c $< -o $(BIN)$@
 
 start.o: start.S
 	$(AArch64_TOOLCHAIN)gcc $(ASMFLAGS) $(INCLUDE_PATHS) -c start.S -o $(BIN)start.o

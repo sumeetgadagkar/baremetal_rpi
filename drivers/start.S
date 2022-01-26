@@ -50,12 +50,15 @@ master:
     eret
 
 el1_entry:
+    // get value of SPSel
+    mrs x0, SPSel
 
     // check if in EL1
     mrs x0, CurrentEL
 
     // get the value of _start
     ldr x1, =_start
+    
     // move stack pointer to _start
     mov sp, x1
 

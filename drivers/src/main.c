@@ -1,10 +1,13 @@
 #include "common.h"
+#include "exception_handler.h"
 #include <stddef.h>
 
 
 
 int main()
 {
+    init_vector_table();
+    enable_interrupts();
 
     volatile unsigned int * result = NULL;
 
