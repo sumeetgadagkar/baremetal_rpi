@@ -7,13 +7,13 @@ Entry into C code
    ```
 2. Run the QEMU emulator
     ```
-    $ sudo qemu-system-aarch64 -M raspi3 -serial telnet:127.0.0.1:1000,server,nowait -serial telnet:127.0.0.1:1001,server,nowait -S -kernel ./bin/kernel8.elf
+    $ sudo qemu-system-aarch64 -M raspi3b -serial telnet:127.0.0.1:1000,server,nowait -serial telnet:127.0.0.1:1001,server,nowait -S -kernel ./bin/kernel8.elf
     ```
 3. On the QEMU application View -> compatmonitor0, then
     ```
     (qemu) gdbserver
     ```
-4. On the linux command line
+4. On the linux command line, run the gdb console
     ```
     $ <Aarch64 toolchain bin>/aarch64-none-elf-gdb ./bin/kernel8.elf
     ```

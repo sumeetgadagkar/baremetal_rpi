@@ -9,5 +9,10 @@ This projects aims to implement drivers for all the peripherals on the raspberry
 3. Rename the folder to "`gcc-arm-aarch64-none-elf`"
 4. Place it under "`baremetal_rpi`" folder
 
-# Emuation
-For basic emulation of the raspi3 we will use [QEMU 6.2](https://www.qemu.org/) (QEMU is not oficially supported on windows)
+# Emulation
+For basic emulation of the raspi3 we will use [QEMU 6.2.0](https://www.qemu.org/) (QEMU is not oficially supported on windows)
+Note - Install QEMU dependecies before building:
+    ```
+    sudo apt install -y make gcc libglib2.0-dev libpixman-1-dev git-all
+    sudo apt install -y ninja-build
+    ```
