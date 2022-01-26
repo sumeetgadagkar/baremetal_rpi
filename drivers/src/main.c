@@ -9,8 +9,6 @@ int main()
     init_vector_table();
     enable_interrupts();
 
-    
-
     volatile unsigned int * result = NULL;
 
     // set GPIO0 as output
