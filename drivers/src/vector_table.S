@@ -35,7 +35,7 @@
 
 // macro for reverting x[0-30] stored on the stack
 // before returning from the stack
-.macro exception exception_exit
+.macro exception_exit
     ldp x0, x1, [sp, #16 * 0]
     ldp x2, x3, [sp, #16 * 1]
     ldp x4, x5, [sp, #16 * 2]
@@ -58,7 +58,7 @@
 
 // macro to handle invalid exceptions
 .macro handle_invalid_entry type
-    kernel_entry
+    exception_entry
     mov x0, #\type
     mrs x1, esr_el1
     mrs x2, elr_el1
