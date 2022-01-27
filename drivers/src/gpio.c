@@ -4,7 +4,16 @@
 
 GPIOStatusTypeDef gpio_set_fcn(unsigned int pin, unsigned int fcn)
 {
-
+    /*  Valid function values:
+    *   000 = GPIO Pin 9 is an input
+    *   001 = GPIO Pin 9 is an output
+    *   100 = GPIO Pin 9 takes alternate function 0
+    *   101 = GPIO Pin 9 takes alternate function 1
+    *   110 = GPIO Pin 9 takes alternate function 2
+    *   111 = GPIO Pin 9 takes alternate function 3
+    *   011 = GPIO Pin 9 takes alternate function 4
+    *   010 = GPIO Pin 9 takes alternate function 5 
+    */
     // check if requested pin is valid
     if (pin > 53)
     {
