@@ -1,4 +1,4 @@
-#include "exception_handler.h"
+#include "exceptions/exception_handler.h"
 
 // exception handler for IRQs
 void irq_handler(void)
