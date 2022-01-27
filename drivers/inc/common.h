@@ -4,6 +4,7 @@
 #define COMMON_H
 
 #include "raspi3.h"
-#include "gpio.h"
+#include "peripherals/gpio.h"
+#include "exceptions/exception_handler.h"
 
 #endif

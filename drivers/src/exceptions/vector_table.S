@@ -1,4 +1,4 @@
-#include "vector_table.h"
+#include "exceptions/vector_table.h"
 
 // macro for adding an entry to the exveption vector table
 .macro ventry label

@@ -1,5 +1,4 @@
 #include "common.h"
-#include "exception_handler.h"
 #include <stddef.h>
 
 #define PIN0 0  //Using pin0 to test out basic GPIO functions
