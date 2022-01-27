@@ -1,6 +1,6 @@
 // GPIO peripheral driver
 
-#include "gpio.h"
+#include "peripherals/gpio.h"
 
 GPIOStatusTypeDef gpio_set_fcn(unsigned int pin, unsigned int fcn)
 {
